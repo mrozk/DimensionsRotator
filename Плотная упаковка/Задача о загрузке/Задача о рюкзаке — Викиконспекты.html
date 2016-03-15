@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!-- saved from url=(0128)http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5 -->
+<html lang="ru" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Задача о рюкзаке — Викиконспекты</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.18.1">
+<link rel="alternate" type="application/x-wiki" title="Править" href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit">
+<link rel="edit" title="Править" href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit">
+<link rel="shortcut icon" href="http://neerc.ifmo.ru/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://neerc.ifmo.ru/wiki/opensearch_desc.php" title="Викиконспекты (ru)">
+<link rel="EditURI" type="application/rsd+xml" href="http://neerc.ifmo.ru/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Викиконспекты — Atom-лента" href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:RecentChanges&feed=atom">
+<link rel="stylesheet" href="http://neerc.ifmo.ru/wiki/load.php?debug=false&lang=ru&modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&only=styles&skin=vector&*">
+<style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: wikidb:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: wikidb:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: wikidb:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+<script src="./Задача о рюкзаке — Викиконспекты_files/load.php"></script><script src="./Задача о рюкзаке — Викиконспекты_files/load(1).php"></script>
+<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Задача_о_рюкзаке", "wgTitle": "Задача о рюкзаке", "wgCurRevisionId": 33903, "wgArticleId": 2878, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": ["Дискретная математика и алгоритмы", "Динамическое программирование"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": []});
+}
+</script><script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="./Задача о рюкзаке — Викиконспекты_files/load(2).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Задача_о_рюкзаке action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;" class="js-messagebox"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Задача о рюкзаке</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">Материал из Викиконспекты</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Перейти к: <a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#mw-head">навигация</a>,
+					<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#p-search">поиск</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div lang="ru" dir="ltr" class="mw-content-ltr"><p><b>Задача о рюкзаке</b>(<i>англ. Knapsack problem</i>) — дано&nbsp;<img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N"> предметов,&nbsp;<img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7e5f36922f1296bd04a7a6205ba6bf7d.png" alt="n_i"> предмет имеет массу&nbsp;<img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/e766b8470ed1c0a12c4b62abda32e426.png" alt=" w_i &gt; 0"> и стоимость&nbsp;<img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/e1bb0840fb36dcfe852e6d2f7cc01537.png" alt="p_i &gt; 0">. Необходимо выбрать из этих предметов такой набор, чтобы суммарная масса не превосходила заданной величины&nbsp;<img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">&nbsp;(вместимость рюкзака), а суммарная стоимость была максимальна.
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Содержание</h2><span class="toctoggle">&nbsp;[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#" class="internal" id="togglelink">убрать</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.B7.D0.B0.D0.B4.D0.B0.D1.87.D0.B8"><span class="tocnumber">1</span> <span class="toctext">Формулировка задачи</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F"><span class="tocnumber">3</span> <span class="toctext">Метод динамического программирования</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F"><span class="tocnumber">4</span> <span class="toctext">Реализация</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80"><span class="tocnumber">5</span> <span class="toctext">Пример</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D0.B7.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_.D1.81.D0.B5.D0.BC.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><span class="tocnumber">6</span> <span class="toctext">Другие задачи семейства</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9E.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA"><span class="tocnumber">6.1</span> <span class="toctext">Ограниченный рюкзак</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8"><span class="tocnumber">6.1.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_2"><span class="tocnumber">6.1.2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_2"><span class="tocnumber">6.1.3</span> <span class="toctext">Метод динамического программирования</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_2"><span class="tocnumber">6.1.4</span> <span class="toctext">Реализация</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9D.D0.B5.D0.BE.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA"><span class="tocnumber">6.2</span> <span class="toctext">Неограниченный рюкзак</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_2"><span class="tocnumber">6.2.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_3"><span class="tocnumber">6.2.2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_3"><span class="tocnumber">6.2.3</span> <span class="toctext">Метод динамического программирования</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9D.D0.B5.D0.BF.D1.80.D0.B5.D1.80.D1.8B.D0.B2.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA"><span class="tocnumber">6.3</span> <span class="toctext">Непрерывный рюкзак</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_3"><span class="tocnumber">6.3.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_4"><span class="tocnumber">6.3.2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_3"><span class="tocnumber">6.3.3</span> <span class="toctext">Реализация</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D1.81.D1.83.D0.BC.D0.BC.D0.B0.D1.85_.D0.BF.D0.BE.D0.B4.D0.BC.D0.BD.D0.BE.D0.B6.D0.B5.D1.81.D1.82.D0.B2"><span class="tocnumber">6.4</span> <span class="toctext">Задача о суммах подмножеств</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_4"><span class="tocnumber">6.4.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_5"><span class="tocnumber">6.4.2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_4"><span class="tocnumber">6.4.3</span> <span class="toctext">Метод динамического программирования</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D1.80.D0.B0.D0.B7.D0.BC.D0.B5.D0.BD.D0.B5"><span class="tocnumber">6.5</span> <span class="toctext">Задача о размене</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_5"><span class="tocnumber">6.5.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_6"><span class="tocnumber">6.5.2</span> <span class="toctext">Варианты решения</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_5"><span class="tocnumber">6.5.3</span> <span class="toctext">Метод динамического программирования</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE.D0.B1_.D1.83.D0.BF.D0.B0.D0.BA.D0.BE.D0.B2.D0.BA.D0.B5"><span class="tocnumber">6.6</span> <span class="toctext">Задача об упаковке</span></a>
+<ul>
+<li class="toclevel-3 tocsection-29"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_6"><span class="tocnumber">6.6.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_7"><span class="tocnumber">6.6.2</span> <span class="toctext">Варианты решения</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-31"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9C.D1.83.D0.BB.D1.8C.D1.82.D0.B8.D0.BF.D0.BB.D0.B8.D0.BA.D0.B0.D1.82.D0.B8.D0.B2.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA"><span class="tocnumber">6.7</span> <span class="toctext">Мультипликативный рюкзак</span></a>
+<ul>
+<li class="toclevel-3 tocsection-32"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_7"><span class="tocnumber">6.7.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_8"><span class="tocnumber">6.7.2</span> <span class="toctext">Варианты решения</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-34"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D0.BD.D0.B0.D0.B7.D0.BD.D0.B0.D1.87.D0.B5.D0.BD.D0.B8.D0.B8"><span class="tocnumber">6.8</span> <span class="toctext">Задача о назначении</span></a>
+<ul>
+<li class="toclevel-3 tocsection-35"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_8"><span class="tocnumber">6.8.1</span> <span class="toctext">Формулировка Задачи</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_9"><span class="tocnumber">6.8.2</span> <span class="toctext">Варианты решения</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-37"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#.D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"><span class="tocnumber">7</span> <span class="toctext">Литература</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=1" title="Править секцию: Формулировка задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.B7.D0.B0.D0.B4.D0.B0.D1.87.D0.B8"> Формулировка задачи </span></h2>
+<p>Дано&nbsp;<img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N">&nbsp;предметов, <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W"> - вместимость рюкзака, <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/eef62acb501249239e1887d1fc21dc58.png" alt="w=\{w_{1},w_{2},...,w_{N}\}"> — соответствующий ему набор положительных целых весов, <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/a858df1cf74fdadc98765dec1308d1bd.png" alt="p=\{p_{1},p_{2},...,p_{N}\}"> — соответствующий ему набор положительных целых стоимостей. Нужно найти набор бинарных величин&nbsp;<img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/e60680865453c02775f75bd50f2f37b7.png" alt="B=\{b_{1},b_{2},...,b_{N}\}">, где <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/0f935b0cb329a6d7fb1a3156baf8e662.png" alt="b_{i} = 1">, если предмет <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7e5f36922f1296bd04a7a6205ba6bf7d.png" alt="n_i"> включен в набор, <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/20f9b39ad864d27c66c811fb5a3c902e.png" alt="b_{i} = 0">, если предмет <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7e5f36922f1296bd04a7a6205ba6bf7d.png" alt="n_i"> не включен, и такой что:
+</p>
+<ol><li><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/0b849875abc3a67ec761dd9b7db54116.png" alt="b_{1} w_{1}+ ... + b_{N} w_{N} \le W">
+</li><li><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/66e2fcad7d40983820d116bf553040ee.png" alt="b_{1} p_{1}+ ... + b_{N} p_{N}"> максимальна.
+</li></ol>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=2" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F"> Варианты решения </span></h2>
+<p>Задачу о рюкзаке можно решить несколькими способами:
+</p>
+<ul><li> Перебирать все подмножества набора из N предметов. Сложность такого решения <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/0c314d870cab2c88039e172d4f8934b6.png" alt="O({2^{N}})">.
+</li></ul>
+<ul><li> Методом <a href="http://neerc.ifmo.ru/wiki/index.php?title=Meet-in-the-middle" title="Meet-in-the-middle">Meet-in-the-middle</a>. Сложность решения <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/42426ba5b5f586d7d8b0c4a26e8be424.png" alt="O({2^{N/2}}\times{N})">
+</li></ul>
+<ul><li> Метод динамического программирования. Сложность - <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/7f66a732b5a9a61e0e73d7b8d8c380e1.png" alt="O(N \times W)">.
+</li></ul>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=3" title="Править секцию: Метод динамического программирования">править</a>]</span> <span class="mw-headline" id=".D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F"> Метод динамического программирования </span></h2>
+<p>Пусть&nbsp;<img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/816d96e9ffb44f661b9c22c465b72040.png" alt="A(k, s)"> есть максимальная стоимости предметов, которые можно уложить в рюкзак вместимости&nbsp;<img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/23b3819794edb7371b8c29c2324917b0.png" alt="s">, если можно использовать только первые&nbsp;<img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/20c101cd7827a8579eb4bb6c144d23f1.png" alt="k">&nbsp;предметов, то есть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/f6517ff488c07a94d47142782bfb6be3.png" alt="\{n_1,n_2,...,n_k\}">, назовем этот набор допустимых предметов для <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/b85f7a6cc095abddb06bdb8d31c0aad3.png" alt="A(k,s)">.
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/686c30dd2bbabc520c9602e5b27a67f0.png" alt="A(k, 0) = 0">
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8228d35742f735c07a90f02c2c6775fd.png" alt="A(0, s) = 0">
+</p><p>Найдем <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8161feaef68ba958c92bc9f2f3543627.png" alt="A(k, s)">. Возможны 2 варианта:
+</p>
+<ol><li>Если предмет <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/20c101cd7827a8579eb4bb6c144d23f1.png" alt="k"> не попал в рюкзак. Тогда <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8161feaef68ba958c92bc9f2f3543627.png" alt="A(k, s)"> равно максимальной стоимости рюкзака с такой же вместимостью и набором допустимых предметов <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/eaf9d9a1f8fb8d4a6d570e78e276ac9b.png" alt="\{n_1,n_2,...,n_{k-1}\}">, то есть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/3821f1226fc5f690f6d1c02d3302cea2.png" alt="A(k,s) = A(k-1, s)">
+</li><li> Если <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/20c101cd7827a8579eb4bb6c144d23f1.png" alt="k"> попал в рюкзак. Тогда <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8161feaef68ba958c92bc9f2f3543627.png" alt="A(k, s)"> равно максимальной стоимости рюкзака, где вес <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/23b3819794edb7371b8c29c2324917b0.png" alt="s"> уменьшаем на вес <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/20c101cd7827a8579eb4bb6c144d23f1.png" alt="k"> -ого предмета и набор допустимых предметов <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/eaf9d9a1f8fb8d4a6d570e78e276ac9b.png" alt="\{n_1,n_2,...,n_{k-1}\}"> плюс стоимость <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/20c101cd7827a8579eb4bb6c144d23f1.png" alt="k">, то есть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/5d38ef20f444fea3bdb1fb900677fac7.png" alt="A(k-1, s-w_k) + p_k">
+</li></ol>
+<p>То есть: 
+</p>
+<ol><li><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/3821f1226fc5f690f6d1c02d3302cea2.png" alt="A(k,s) = A(k-1, s)">
+</li><li><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35c82891de1312a2808754af09d53409.png" alt="A(k,s) = A(k-1, s-w_k) + p_k">
+</li></ol>
+<p>Выберем из этих двух значений максимальное:
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/cd84c93dfc088be1ddcb78551a0dbf56.png" alt="A(k,s) = max(A(k-1,s), A(k-1,s-w_{k}) + p_{k})">
+</p><p>Стоимость искомого набора равна <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/01a000b6d83631cb2a67589a529d63ca.png" alt="A(N,W)">, так как нужно найти максимальную стоимость рюкзака, где все предметы допустимы и вместимость рюкзака <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">.
+</p><p><b>Восстановим набор предметов, входящих в рюкзак</b>
+</p><p>Будем определять, входит ли <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7e5f36922f1296bd04a7a6205ba6bf7d.png" alt="n_i"> предмет в искомый набор. Начинаем с элемента <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/3ebedf666d9e1f092271c182f2b01633.png" alt="A(i,w)">, где <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/4fae9261946007de782011fa1bf87186.png" alt="i = N">, <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/8e008766f6b5a27718057dd710e92ec0.png" alt="w = W">. Для этого сравниваем <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/3ebedf666d9e1f092271c182f2b01633.png" alt="A(i,w)"> со следующими значениями:
+</p>
+<ol><li>Максимальная стоимость рюкзака с такой же вместимостью и набором допустимых предметов <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/0727d3b2496bd3d567ecc336ca2b0121.png" alt="\{n_1,n_2,...,n_{i-1}\}">, то есть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/7250b2c3fedaa7f178c5bff65d6325ac.png" alt="A(i-1, w)">
+</li><li>Максимальная стоимость рюкзака с вместимостью на <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/adebadf71ee54b96a0536ceeb43162de.png" alt="w_i"> меньше и набором допустимых предметов <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/0727d3b2496bd3d567ecc336ca2b0121.png" alt="\{n_1,n_2,...,n_{i-1}\}"> плюс стоимость <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/e6dbd20f9efdbf8a472149761b91cd95.png" alt="p_i">, то есть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/80c3920587b59708cd54ef20d8843f91.png" alt="A(i-1, w-w_i)+p_i">
+</li></ol>
+<p>Заметим, что при построении <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/6fc9797585b16228ee9f1e5a14c5c2b6.png" alt="A"> мы выбирали максимум из этих значений и записывали в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/dd9402a97a2ab5b9aeee27aaf6842d6f.png" alt="A(i, w)">. Тогда будем сравнивать <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/dd9402a97a2ab5b9aeee27aaf6842d6f.png" alt="A(i, w)"> c <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/7250b2c3fedaa7f178c5bff65d6325ac.png" alt="A(i-1, w)">, если равны, тогда <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7e5f36922f1296bd04a7a6205ba6bf7d.png" alt="n_i"> не входит в искомый набор, иначе входит.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=4" title="Править секцию: Реализация">править</a>]</span> <span class="mw-headline" id=".D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F"> Реализация </span></h2>
+<p>Сначала генерируем <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/6fc9797585b16228ee9f1e5a14c5c2b6.png" alt="A">. 
+</p>
+<pre>for i = 0..W
+  A[0][i] = 0;
+for i = 0..N
+  A[i][0] = 0;   //Первые элементы приравниваем к 0
+for k = 1..N               
+  for s = 0..W   //Перебираем для каждого k все вместисмости 
+    if s &gt;= w[k]    //Если текущий предмет вмещается в рюкзак
+      A[k][s] = max(A[k-1][s], A[k-1][s-w[k]]+p[k]); //выбираем класть его или нет
+    else 
+      A[k][s] = A[k-1][s];             //иначе, не кладем
+</pre>
+<p>Затем найдем набор <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/d31b25c0c7ee45d77088c2ee683e5006.png" alt="ans"> предметов, входящих в рюкзак, рекурсивной функцией:
+</p>
+<pre>findAns(k, s)
+  if A[k][s] == 0 
+    return;
+  if A[k-1][s] == A[k][s]
+    findAns(k-1, s);
+  else 
+    findAns(k-1, s - w[k]);
+    ans.push(k);
+</pre>
+<p>Сложность алгоритма <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/7f66a732b5a9a61e0e73d7b8d8c380e1.png" alt="O(N \times W)">
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=5" title="Править секцию: Пример">править</a>]</span> <span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80"> Пример </span></h2>
+<p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/1549a4b88662627249798ea570c0acfd.png" alt="W = 13, N = 5"> 
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/10749256027c4272d01a70d8f9be4ada.png" alt="w_{1} = 3, p_{1} = 1">
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fdaae5ca8f3eb6831ff67372c438dced.png" alt="w_{2} = 4, p_{2} = 6">
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/323e1f7c865ed6f68910a80fca87e2d2.png" alt="w_{3} = 5, p_{3} = 4">
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/6ca0a7170d89fbaf383819860bd6e191.png" alt="w_{4} = 8, p_{4} = 7">
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/f091faa5e0f4c4d0fc05841a592c8cb4.png" alt="w_{5} = 9, p_{5} = 6">
+</p><p><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A4%D0%B0%D0%B9%D0%BB:Knapsack_problem0.png" class="image"><img alt="Knapsack problem0.png" src="./Задача о рюкзаке — Викиконспекты_files/Knapsack_problem0.png" width="451" height="197"></a>
+</p><p>Числа от 0 до 13 в первой строчке обозначают вместимость рюкзака.
+</p><p>В первой строке как только вместимость рюкзака <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/6ba6afd17ff1345c91249f9770f3fb13.png" alt="n \ge 3">, добавляем в рюкзак 1 предмет.
+</p><p>Рассмотрим <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/be1f7a5236d5bda46bf866667b21d8a0.png" alt="k = 3">, при каждом <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/874f72c01e9e4948410afafd76828132.png" alt="s \ge 5 (">так как <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/5804b03e8a8fdab62d6155eb496af0f6.png" alt="w_3 = 5)"> сравниваем <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/8cfca978b07a650408fc4b5b8e88ecb9.png" alt="A[k-1][s]"> и <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/0a73f0d2d5401bbc0e38135441272d2b.png" alt="A[k-1][s-w_3]+p_3"> и записываем в <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/9dda726244f516bf0008cace81421fe7.png" alt="A[k][s]"> стоимость либо рюкзака без третьего предмета, но с таким же весом, либо с третьим предметом, тогда стоимость равна стоимости третьего предмета плюс стоимость рюкзака с вместимостью на <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/75299e17549fe78aebba3567a87c9462.png" alt="w_3"> меньше.     
+</p><p>Максимальная стоимость рюкзака находится в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/6d3b9aebde202b4c4df6ee46622284ea.png" alt="A(5, 13)">.
+</p><p><b>Восстановление набора предметов, из которых состоит максимально дорогой рюкзак.</b>
+</p><p>Начиная с <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/6d3b9aebde202b4c4df6ee46622284ea.png" alt="A(5, 13)"> восстанавливаем ответ.
+</p><p><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A4%D0%B0%D0%B9%D0%BB:%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B53.png" class="image"><img alt="Задача о рюкзаке3.png" src="./Задача о рюкзаке — Викиконспекты_files/Задача_о_рюкзаке3.png" width="451" height="197"></a>
+</p><p>Таким образом, в набор входит <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/fec52312312daf5956d657b301d2282e.png" alt="2"> и <img class="tex" style="vertical-align:-1px" src="./Задача о рюкзаке — Викиконспекты_files/c5ea06db374a069751ec48d84a71fb7d.png" alt="4"> предмет.
+</p><p>Стоимость рюкзака <img class="tex" style="vertical-align:-1px" src="./Задача о рюкзаке — Викиконспекты_files/f4e4e0fafa0c7a28a945a34b40fd70d2.png" alt="= 6 + 7 = 13">
+</p><p>Вес рюкзака <img class="tex" style="vertical-align:-1px" src="./Задача о рюкзаке — Викиконспекты_files/f4bfa93310db53e4d70243c464ba04c8.png" alt="= 4 + 8 = 12">
+</p>
+<h1><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=6" title="Править секцию: Другие задачи семейства">править</a>]</span> <span class="mw-headline" id=".D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D0.B7.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_.D1.81.D0.B5.D0.BC.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B0">Другие задачи семейства</span></h1>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=7" title="Править секцию: Ограниченный рюкзак">править</a>]</span> <span class="mw-headline" id=".D0.9E.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA">Ограниченный рюкзак </span></h2>
+<p><b>Ограниченный рюкзак</b> (англ. <i>Bounded Knapsack Problem</i>) - обобщение классической задачи, когда любой предмет может быть взят некоторое количество раз.
+</p><p><b>Пример:</b> Вор грабит склад. Он может унести ограниченный вес, каждый товар на складе содержится в определенном ограниченном количестве. Нужно унести предметов на максимальную сумму.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=8" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8">Формулировка Задачи</span></h3>
+<p>Каждый предмет может быть выбран ограниченное <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/3dfb4727cdce780136e07dea8af357be.png" alt="b_i"> число раз.
+Задача выбрать число <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/b87da519a6509b3c5bc084836aa2b916.png" alt="x_i"> предметов каждого типа так, чтобы
+</p>
+<ul><li> максимизировать общую стоимость: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/61aebb5ebb2c05d54bed2a488ec1016d.png" alt="\sum_{i=1}^N p_ix_i">;
+</li></ul>
+<ul><li> выполнялось условие совместности: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/1dc0db6d35a423c49e38c4d9ab26801a.png" alt="\sum_{i=1}^N w_ix_i \le W">;
+</li></ul>
+<p>где <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/b3413d7306c5e77c59e69e663d30e781.png" alt="x_i \in (0,1,...,b_i)"> для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=9" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_2">Варианты решения</span></h3>
+<p>При небольших <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/3dfb4727cdce780136e07dea8af357be.png" alt="b_i"> решается сведением к классической задаче о рюкзаке. В иных случаях:
+</p>
+<ul><li> Методом ветвей и границ.
+</li><li> Методом динамического программирования.
+</li></ul>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=10" title="Править секцию: Метод динамического программирования">править</a>]</span> <span class="mw-headline" id=".D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_2">Метод динамического программирования</span></h3>
+<p>Пусть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)"> максимальная стоимость любого возможного числа предметов типов от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i">, суммарным весом до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c">.
+</p><p>Заполним <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/2e75cc63af0fdd77a90380ba0cdf80e3.png" alt="d(0,c)"> нулями.
+</p><p>Тогда меняя i от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N">, рассчитаем на каждом шаге <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)">, для <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c"> от 0 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">, по рекуррентной формуле:
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/cacde0fb7991f32aad68356ed049b139.png" alt="d(i,c) = max(d(i - 1, c - lw_i) + lp_i)"> по всем целым <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/b8234e838070f2c496d73147d4a05428.png" alt="l"> из промежутка <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/948e636db3e1b8e006bd288427cf2bef.png" alt="0 \le l \le min(b_i,\lfloor c/w_i \rfloor)">.
+</p><p>Если не нужно восстанавливать ответ, то можно использовать одномерный массив <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32d3c3ba4f038dfd21f9daf98313e028.png" alt="d(c)"> вместо двумерного.
+</p><p>После выполнения в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32a7dc5ac058e979e895be248fb44700.png" alt="d(N,W)"> будет лежать максимальная стоимость предметов, помещающихся в рюкзак.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=11" title="Править секцию: Реализация">править</a>]</span> <span class="mw-headline" id=".D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_2"> Реализация </span></h3>
+<pre>for i = 0..W // база
+  d[0][i] = 0;
+for i = 1..N             
+  for c = 0..W   //Перебираем для каждого i, все вместимости 
+    d[i][c] = d[i - 1][c];
+    for l = min(b[i], c / w[i]) .. 1 // ищем l для которого выполняется максимум
+        d[i][c] =  max(d[i][c], d[i - 1][c - l * w[i]] + p[i] * l);
+</pre>
+<p>Сложность алгоритма <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/c758be2cd178aae097b4c456311f1fc7.png" alt="O(NW^2)">.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=12" title="Править секцию: Неограниченный рюкзак">править</a>]</span> <span class="mw-headline" id=".D0.9D.D0.B5.D0.BE.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA">Неограниченный рюкзак</span></h2>
+<p><b>Неограниченный рюкзак</b> (англ.<i>Unbounded Knapsack Problem</i>) - обобщение ограниченного рюкзака, в котором любой предмет может быть выбран любое количество раз.
+</p><p><b>Пример:</b> Перекупщик закупается на оптовой базе. Он может увезти ограниченное количество товара, количество товара каждого типа на базе не ограниченно. Нужно увезти товар на максимальную сумму.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=13" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_2">Формулировка Задачи</span></h3>
+<p>Каждый предмет может быть выбран любое число раз.
+Задача выбрать количество <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/b87da519a6509b3c5bc084836aa2b916.png" alt="x_i"> предметов каждого типа так, чтобы
+</p>
+<ul><li>максимизировать общую стоимость: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/61aebb5ebb2c05d54bed2a488ec1016d.png" alt="\sum_{i=1}^N p_ix_i">;
+</li></ul>
+<ul><li>выполнялось условие совместности: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/1dc0db6d35a423c49e38c4d9ab26801a.png" alt="\sum_{i=1}^N w_ix_i \le W">;
+</li></ul>
+<p>где <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/2cf6d5535f528acf264ffa69491383b8.png" alt="x_i \ge 0"> целое,  для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=14" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_3">Варианты решения</span></h3>
+<p>Самые распространенные методы точного решения это:
+</p>
+<ul><li> Метод ветвей и границ.
+</li><li> Метод динамического программирования.
+</li></ul>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=15" title="Править секцию: Метод динамического программирования">править</a>]</span> <span class="mw-headline" id=".D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_3">Метод динамического программирования</span></h3>
+<p>Пусть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)"> максимальная стоимость любого количества вещей типов от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i">, суммарным весом до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c"> включительно.
+</p><p>Заполним <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/2e75cc63af0fdd77a90380ba0cdf80e3.png" alt="d(0,c)"> нулями.
+</p><p>Тогда меняя i от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N">, рассчитаем на каждом шаге <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)">, для <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c"> от 0 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">, по рекуррентной формуле:
+</p><p><img class="tex" style="vertical-align:-22px" src="./Задача о рюкзаке — Викиконспекты_files/4a269a690d78191d43d0c400ef4e68d0.png" alt="d(i,c) = \begin{cases}  d(i - 1, c) &amp; for\ c = 0, ..., w_i - 1; \\  max(d(i - 1, c), d(i, c - w_i) + p_i) &amp; for\ c = w_i, ..., W;  \end{cases}">
+</p><p>После выполнения в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32a7dc5ac058e979e895be248fb44700.png" alt="d(N,W)"> будет лежать максимальная стоимость предметов, помещающихся в рюкзак.
+</p><p>Если не нужно восстанавливать ответ, то можно использовать одномерный массив <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32d3c3ba4f038dfd21f9daf98313e028.png" alt="d(c)"> вместо двумерного и использовать формулу:
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/a1b4afe0cf21c54b90407bc8832a6d86.png" alt="d(c) = max(d(c), d(c - w_i) + p_i)">;
+</p><p>Сложность алгоритма <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8eeb68573cf42c73da0ccbc0fdd974e6.png" alt="O(NW)">.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=16" title="Править секцию: Непрерывный рюкзак">править</a>]</span> <span class="mw-headline" id=".D0.9D.D0.B5.D0.BF.D1.80.D0.B5.D1.80.D1.8B.D0.B2.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA">Непрерывный рюкзак</span></h2>
+<p><b>Непрерывный рюкзак</b> (англ. <i>Continuous knapsack problem</i>) - вариант задачи, в котором возможно брать любою дробную часть от предмета, при этом удельная стоимость сохраняется.
+</p><p><b>Пример:</b> Вор грабит мясника. Суммарно он может унести ограниченный вес товаров. Вор может резать товары без ущерба к удельной стоимости. Нужно унести товара на максимальную сумму.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=17" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_3">Формулировка Задачи</span></h3>
+<p>Задача выбрать часть <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/b87da519a6509b3c5bc084836aa2b916.png" alt="x_i"> каждого предмета так, чтобы
+</p>
+<ul><li>максимизировать общую стоимость: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/61aebb5ebb2c05d54bed2a488ec1016d.png" alt="\sum_{i=1}^N p_ix_i">;
+</li></ul>
+<ul><li>выполнялось условие совместности: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/1dc0db6d35a423c49e38c4d9ab26801a.png" alt="\sum_{i=1}^N w_ix_i \le W">;
+</li></ul>
+<p>где <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/dc3850486fafcaa08a6a926d56bfe573.png" alt="0 \le x_i \le 1"> дробное, для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=18" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_4">Варианты решения</span></h3>
+<p>Возможность брать любую часть от предмета сильно упрощает задачу. Жадный алгоритм дает оптимальное решение в данном случае.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=19" title="Править секцию: Реализация">править</a>]</span> <span class="mw-headline" id=".D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_3"> Реализация </span></h3>
+<pre>sort(); // сортируем в порядке убывания удельной стоимости.
+for i = 1..N // идем по предметам            
+      if W &gt;= w[i]    //если помещается - берем
+       sum += p[i];
+       W -= w[i];
+   else
+       sum += W / w[i] * p[i];// иначе берем сколько можно и выходим
+       break;
+</pre>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=20" title="Править секцию: Задача о суммах подмножеств">править</a>]</span> <span class="mw-headline" id=".D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D1.81.D1.83.D0.BC.D0.BC.D0.B0.D1.85_.D0.BF.D0.BE.D0.B4.D0.BC.D0.BD.D0.BE.D0.B6.D0.B5.D1.81.D1.82.D0.B2">Задача о суммах подмножеств</span></h2>
+<p><b>Задача о суммах подмножеств</b> (англ. <i>Subset-sum problem, Value Independent Knapsack Problem</i>) - задача из семейства, в которой стоимость предмета совпадает с его весом.
+</p><p><b>Пример:</b> В машина может увезти определенное количество груза. Нужно увезти как можно больше крупного неделимого мусора за раз.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=21" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_4">Формулировка Задачи</span></h3>
+<p>Нужно выбрать подмножество так, чтобы сумма ближе всего к <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">, но не превысила его. Формально, нужно найти набор бинарных величин <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/b87da519a6509b3c5bc084836aa2b916.png" alt="x_i">, так чтобы
+</p>
+<ul><li>максимизировать общую стоимость: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/4ada5e5f3106205215be0230e9b16353.png" alt="\sum_{i=1}^N w_ix_i">;
+</li></ul>
+<ul><li>выполнялось условие совместности: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/1dc0db6d35a423c49e38c4d9ab26801a.png" alt="\sum_{i=1}^N w_ix_i \le W">;
+</li></ul>
+<p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/cd9009aba1b90f63f012e6e77ecde92a.png" alt="x_j = 1"> если <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/bacf17aa0c7bb55107f90e432dbe60da.png" alt="j"> предмет назначен рюкзаку, иначе <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/c02254c9916c9121eface65c32a752f3.png" alt="x_{ij} = 0">,  для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=22" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_5">Варианты решения</span></h3>
+<p>Для решения пригодны любые методы применяемые для классической задачи, однако специализированые алгоритмы обычно более оптимальны по параметрам. Используются:
+</p>
+<ul><li> Метод динамического программирования.
+</li><li> Гибридный метод на основе динамического программирования и поиска по дереву. В худшем случае, работает за <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/99688001357bca60bfc039c548a51202.png" alt="O(n)">.
+</li></ul>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=23" title="Править секцию: Метод динамического программирования">править</a>]</span> <span class="mw-headline" id=".D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_4">Метод динамического программирования</span></h3>
+<p>Пусть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)"> максимальная сумма  <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/a6334f98bbda0d5f5cc11d9298952174.png" alt="\le c">, подмножества взятого из <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/99bd99c5623ae8233f0021ea933e1926.png" alt="1, ...,\ i"> элементов.
+</p><p>Заполним <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/2e75cc63af0fdd77a90380ba0cdf80e3.png" alt="d(0,c)"> нулями.
+</p><p>Тогда меняя i от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N">, рассчитаем на каждом шаге <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)">, для <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c"> от 0 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">, по рекуррентной формуле:
+</p><p><img class="tex" style="vertical-align:-22px" src="./Задача о рюкзаке — Викиконспекты_files/64502bb0f17936afc914e017711cff7f.png" alt="d(i,c) = \begin{cases}  d(i - 1, c) &amp; for\ c = 0, ..., w_i - 1; \\  max(d(i - 1, c), d(i - 1, c - w_i) + w_i) &amp; for\ c = w_i, ..., W;  \end{cases}">
+</p><p>После выполнения в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32a7dc5ac058e979e895be248fb44700.png" alt="d(N,W)"> будет лежать максимальная сумма подмножества, не превышающая заданное значение.
+</p><p>Сложность алгоритма <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8eeb68573cf42c73da0ccbc0fdd974e6.png" alt="O(NW)">.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=24" title="Править секцию: Задача о размене">править</a>]</span> <span class="mw-headline" id=".D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D1.80.D0.B0.D0.B7.D0.BC.D0.B5.D0.BD.D0.B5">Задача о размене</span></h2>
+<p><b>Задача о размене</b> (англ. <i>Change-Making problem</i>) - имеются <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N"> неисчерпаемых типов предметов с весами <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/adebadf71ee54b96a0536ceeb43162de.png" alt="w_i">.  Нужно наполнить рюкзак предметами с суммарным весом <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">.
+</p><p>Часто задачу ставят как, дать сдачу наименьшим количеством монет.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=25" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_5">Формулировка Задачи</span></h3>
+<p>Каждый предмет может быть выбран любое число раз.
+Задача выбрать количество <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/b87da519a6509b3c5bc084836aa2b916.png" alt="x_i"> предметов каждого типа так, чтобы
+</p>
+<ul><li>минимизировать количество взятых предметов: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/b594b3986a54d5246b30b8941ef13c73.png" alt="\sum_{i=1}^N x_i">;
+</li></ul>
+<ul><li>сумма весов выбранных предметов равнялась вместимости рюкзака: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/536c769b7ebf5ac854ced85bc02ac619.png" alt="\sum_{i=1}^N w_ix_i = W">;
+</li></ul>
+<p>Где <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/2cf6d5535f528acf264ffa69491383b8.png" alt="x_i \ge 0"> целое,  для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=26" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_6">Варианты решения</span></h3>
+<p>Самые распространенные методы точного решения это:
+</p>
+<ul><li> Метод ветвей и границ.
+</li><li> Метод динамического программирования.
+</li></ul>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=27" title="Править секцию: Метод динамического программирования">править</a>]</span> <span class="mw-headline" id=".D0.9C.D0.B5.D1.82.D0.BE.D0.B4_.D0.B4.D0.B8.D0.BD.D0.B0.D0.BC.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.BF.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_5">Метод динамического программирования</span></h3>
+<p>Пусть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)"> минимальное число предметов, типов от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i">, необходимое, чтобы заполнить рюкзак вместимостью <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c">.
+</p><p>Пусть <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/2c83c374be900a8593347b57b63ada8a.png" alt="d(0,0) = 0">, а <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/2c10f458bb92159f3b745c5b62556a88.png" alt="d(0,c) = \inf"> для всех <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/55ebe8be4db0fb15596d935f67bacd0a.png" alt="c &gt; 0">. 
+</p><p>Тогда меняя i от 1 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N">, рассчитаем на каждом шаге <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/35e5b00c9546bfd26b83b2beb1563610.png" alt="d(i,c)">, для <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/cef160c9876cc23aa59313fa78238223.png" alt="c"> от 0 до <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W">, по рекуррентной формуле:
+</p><p><img class="tex" style="vertical-align:-22px" src="./Задача о рюкзаке — Викиконспекты_files/e09f5c99e7c4270ef445b1fa7df71839.png" alt="d(i,c) = \begin{cases}  d(i - 1, c) &amp; for\ c = 0, ..., w_i - 1; \\  min(d(i - 1, c), d(i, c - w_i) + 1) &amp; for\ c = w_i, ..., W;  \end{cases}">
+</p><p>После выполнения в <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32a7dc5ac058e979e895be248fb44700.png" alt="d(N,W)"> будет лежать максимальная стоимость предметов, помещающихся в рюкзак.
+</p><p>Если не нужно восстанавливать ответ, то можно использовать одномерный массив <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/32d3c3ba4f038dfd21f9daf98313e028.png" alt="d(c)"> вместо двумерного и использовать формулу:
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/7ad0acc336f6bd08c062379325d1a142.png" alt="d(c) = min(d(c), d(c - w_i) + 1) \qquad  for\ c = w_i, ..., W">.
+</p><p>Сложность алгоритма <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/8eeb68573cf42c73da0ccbc0fdd974e6.png" alt="O(NW)">.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=28" title="Править секцию: Задача об упаковке">править</a>]</span> <span class="mw-headline" id=".D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE.D0.B1_.D1.83.D0.BF.D0.B0.D0.BA.D0.BE.D0.B2.D0.BA.D0.B5">Задача об упаковке</span></h2>
+<p><b>Задача об упаковке</b> (англ. <i>Bin Packing Problem</i>) - имеются <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N"> рюкзаков вместимости <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/097a5b9a33da23d7dd44cf7e705f834c.png" alt="W"> и столько же предметов с весами <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/adebadf71ee54b96a0536ceeb43162de.png" alt="w_i">. Нужно распределить все предметы, задействовав минимальное количество рюкзаков.
+</p><p><b>Пример:</b> Нужно вывезти из шахты все куски руды, используя наименьшее число вагонеток.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=29" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_6">Формулировка Задачи</span></h3>
+<p>Математически задачу можно представить так:
+</p>
+<ul><li>минимизировать количество рюкзаков: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/4638063201678efd83ce22e592f74abd.png" alt="\sum_{i=1}^N y_i">;
+</li></ul>
+<ul><li>так чтобы выполнялось условие на совместность: <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/cc3a9e2c720b5d1c1855849d0dd1a357.png" alt="\sum_{i=1}^N w_ix_{ij} \le Wy_j \qquad j \in {1, ..., N}">;
+</li></ul>
+<p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/87230bce3fac17a1d063e73e6130c274.png" alt="x_{ij} = 1"> если <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/bacf17aa0c7bb55107f90e432dbe60da.png" alt="j"> предмет назначен  <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i"> рюкзаку. Иначе <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/c02254c9916c9121eface65c32a752f3.png" alt="x_{ij} = 0">.
+</p><p><img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/e5bfeb44afa76c84274602862e372b57.png" alt="y_i = 1"> если <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i"> рюкзак используется. Иначе <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/66b87256ff95a51d92be5d6705bbb5dd.png" alt="y_i = 0">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=30" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_7">Варианты решения</span></h3>
+<p>Применение динамического программирования нецелесообразно. Обычно применяют аппроксимационные алгоритмы, либо используют метод ветвей и границ.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=31" title="Править секцию: Мультипликативный рюкзак">править</a>]</span> <span class="mw-headline" id=".D0.9C.D1.83.D0.BB.D1.8C.D1.82.D0.B8.D0.BF.D0.BB.D0.B8.D0.BA.D0.B0.D1.82.D0.B8.D0.B2.D0.BD.D1.8B.D0.B9_.D1.80.D1.8E.D0.BA.D0.B7.D0.B0.D0.BA">Мультипликативный рюкзак</span></h2>
+<p><b>Мультипликативный рюкзак</b> (англ. <i>Multiple Knapsack Problem</i>) - есть <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N"> предметов и <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/e554aeb0e3d1ec4efa3c4278f9e8f8c4.png" alt="M"> рюкзаков (<img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/8f853a6708db7f5ab0be8bac10bbfd75.png" alt="M\le N">). У каждого рюкзака своя вместимость <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7badaa75975b61bcd7ba430f3c26c2e5.png" alt="W_i">. Задача: выбрать <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/e554aeb0e3d1ec4efa3c4278f9e8f8c4.png" alt="M"> не пересекающихся множеств, назначить соответствие рюкзакам так, чтобы суммарная стоимость была максимальна, а вес предметов в каждом рюкзаке не превышал его вместимость.
+</p><p><b>Пример:</b> У транспортной компании есть парк машин разной грузоподъемности. Нужно перевезти товара на максимальную сумму с одного склада на другой единовременно.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=32" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_7">Формулировка Задачи</span></h3>
+<p>Максимизировать <img class="tex" style="vertical-align:-7px" src="./Задача о рюкзаке — Викиконспекты_files/bc15196dc8c87a339a6442f820885458.png" alt="\sum_{i=1}^M \sum_{j=1}^{N} p_jx_{ij}">
+</p><p>так, чтобы <img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/ef4ffa7213a7169fbd88a64d5bb353e4.png" alt="\sum_{i=1}^N w_jx_{ij} \le W_i"> выполнялось для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p><p><img class="tex" style="vertical-align:-7px" src="./Задача о рюкзаке — Викиконспекты_files/a8b99a3a5383e5e5f414b3f196bd52a6.png" alt="\sum_{j=1}^{M}x_{ij}=1"> для всех <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/fe07b3c84a821352d65466441684d9cf.png" alt="i= 1,2,...,N">.
+</p><p><br>
+<img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/87230bce3fac17a1d063e73e6130c274.png" alt="x_{ij} = 1"> если <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/bacf17aa0c7bb55107f90e432dbe60da.png" alt="j"> предмет назначен  <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i"> рюкзаку. Иначе <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/c02254c9916c9121eface65c32a752f3.png" alt="x_{ij} = 0">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=33" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_8">Варианты решения</span></h3>
+<p>Применение динамического программирования, для задач данного типа нецелесообразно. Используются вариации метода ветвей и границ.
+</p>
+<h2><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=34" title="Править секцию: Задача о назначении">править</a>]</span> <span class="mw-headline" id=".D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B0_.D0.BE_.D0.BD.D0.B0.D0.B7.D0.BD.D0.B0.D1.87.D0.B5.D0.BD.D0.B8.D0.B8">Задача о назначении</span></h2>
+<p><b>Задача о назначении</b> (англ. <i>Generalized Assignment Problem</i>) - Наиболее общая задача семейства. Отличается от мультипликативного рюкзака тем, что каждый предмет имеет различные характеристики в зависимости от рюкзака, куда его помещают. Есть <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/649848397ed11109e9aae72b7e83c8c5.png" alt="N"> предметов и <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/e554aeb0e3d1ec4efa3c4278f9e8f8c4.png" alt="M"> рюкзаков (<img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/8f853a6708db7f5ab0be8bac10bbfd75.png" alt="M\le N">). У каждого рюкзака своя вместимость <img class="tex" style="vertical-align:-2px" src="./Задача о рюкзаке — Викиконспекты_files/7badaa75975b61bcd7ba430f3c26c2e5.png" alt="W_i">, у <img class="tex" style="vertical-align:-3px" src="./Задача о рюкзаке — Викиконспекты_files/bacf17aa0c7bb55107f90e432dbe60da.png" alt="j"> предмета <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/0a367f3970e5eb46ff38d4ed5b3ff6c7.png" alt="p_{ij}"> стоимость и вес, при помещении его в <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/ae00b0f326c629ed940b565843c38714.png" alt="i"> рюкзак, равны <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/0a367f3970e5eb46ff38d4ed5b3ff6c7.png" alt="p_{ij}"> и <img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/5a540105e8e6328445b1bd06fd1f175f.png" alt="w_{ij}">  соответственно.  Задача: выбрать <img class="tex" style="vertical-align:0px" src="./Задача о рюкзаке — Викиконспекты_files/e554aeb0e3d1ec4efa3c4278f9e8f8c4.png" alt="M"> не пересекающихся множеств, назначить соответствие рюкзакам так, чтобы суммарная стоимость была максимальна, а вес предметов в каждом рюкзаке не превышал его вместимость.
+Весьма важная задача, так как она моделирует оптимальное распределение различных задач между вычислительными блоками.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=35" title="Править секцию: Формулировка Задачи">править</a>]</span> <span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D1.83.D0.BB.D0.B8.D1.80.D0.BE.D0.B2.D0.BA.D0.B0_.D0.97.D0.B0.D0.B4.D0.B0.D1.87.D0.B8_8">Формулировка Задачи</span></h3>
+<p>Максимизировать стоимость выбранных предметов <img class="tex" style="vertical-align:-7px" src="./Задача о рюкзаке — Викиконспекты_files/063d3b4a444361f369fb79b4f253220f.png" alt="\sum_{i=1}^M\sum_{j=1}^N p_{ij} x_{ij}">,
+</p><p>при выполнении условия совместности <img class="tex" style="vertical-align:-7px" src="./Задача о рюкзаке — Викиконспекты_files/7713ae6b8ae7e43bf9098e5914055cef.png" alt="\sum_{j=1}^N w_{ij} x_{ij} \le W_i \qquad i=1, \ldots, M">.
+</p><p><img class="tex" style="vertical-align:-5px" src="./Задача о рюкзаке — Викиконспекты_files/87b7543e1857c143c1030e9d534bc212.png" alt="\sum_{i=1}^M x_{ij} \leq 1 \qquad j=1, \ldots, N">.
+</p><p><img class="tex" style="vertical-align:-4px" src="./Задача о рюкзаке — Викиконспекты_files/15cae595d9931bd7464456217ea37915.png" alt="x_{ij} \in \{0,1\} \qquad i=1, \ldots, N, \quad j=1, \ldots, N">.
+</p>
+<h3><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=36" title="Править секцию: Варианты решения">править</a>]</span> <span class="mw-headline" id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D0.BD.D1.82.D1.8B_.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_9">Варианты решения</span></h3>
+<p>Применение динамического программирования нецелесообразно. Наиболее используем метод ветвей и границ.
+</p>
+<h1><span class="editsection">[<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&section=37" title="Править секцию: Литература">править</a>]</span> <span class="mw-headline" id=".D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"> Литература </span></h1>
+<ul><li><a rel="nofollow" class="external text" href="http://informatics.mccme.ru/moodle/mod/book/view.php?id=815&chapterid=60">Дистанционная подготовка по информатике</a>
+</li><li><a rel="nofollow" class="external text" href="http://rosettacode.org/wiki/Knapsack_Problem">Код для нескольких задач семейства на всевозможных языках</a>
+</li><li><a rel="nofollow" class="external text" href="http://www.diku.dk/users/pisinger/95-1.pdf">David Pisinger Knapsack problems. — 1995</a>
+</li><li>Silvano Martello, Paolo Toth. Knapsack Problems: Algorithms and Computer Implementations — 1990 г. — <a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:BookSources/0471924202" class="internal mw-magiclink-isbn">ISBN 0-471-92420-2</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2028/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:2878-0!*!0!!ru!2!* and timestamp 20140711160102 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Источник — «<a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&oldid=33903">http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&amp;oldid=33903</a>»				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Categories" title="Служебная:Categories">Категории</a>: <ul><li><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%94%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_%D0%B8_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B" title="Категория:Дискретная математика и алгоритмы">Дискретная математика и алгоритмы</a></li><li><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Категория:Динамическое программирование">Динамическое программирование</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Личные инструменты</h5>
+	<ul>
+		<li id="pt-login"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:UserLogin&returnto=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0+%D0%BE+%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5" title="Здесь можно зарегистрироваться в системе, но это необязательно. [alt-o]" accesskey="o">Представиться / зарегистрироваться</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Пространства имён</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="./Задача о рюкзаке — Викиконспекты_files/Задача о рюкзаке — Викиконспекты.html" title="Содержание статьи [alt-c]" accesskey="c">Статья</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit&redlink=1" title="Обсуждение содержания страницы [alt-t]" accesskey="t">Обсуждение</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Варианты</span><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Просмотры</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="./Задача о рюкзаке — Викиконспекты_files/Задача о рюкзаке — Викиконспекты.html">Чтение</a></span></li>
+					<li id="ca-edit"><span><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=edit" title="Эту страницу можно изменять. Используйте, пожалуйста, предварительный просмотр перед сохранением [alt-e]" accesskey="e">Правка</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&action=history" title="Журнал изменений страницы [alt-h]" accesskey="h">История</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Действия</span><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Поиск</label></h5>
+	<form action="http://neerc.ifmo.ru/wiki/index.php" id="searchform">
+		<input type="hidden" name="title" value="Служебная:Search">
+				<input type="search" name="search" title="Искать это слово [alt-f]" accesskey="f" id="searchInput">		<input type="submit" name="go" value="Перейти" title="Перейти к странице, имеющей в точности такое название" id="searchGoButton" class="searchButton">		<input type="submit" name="fulltext" value="Найти" title="Найти страницы, содержащие указанный текст" id="mw-searchButton" class="searchButton">			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/wiki/skins/logo.png);" href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Заглавная страница"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id="p-navigation">
+	<h5>Навигация</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [alt-z]" accesskey="z">Заглавная страница</a></li>
+			<li id="n-portal"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%92%D0%B8%D0%BA%D0%B8%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="О проекте, о том, что вы можете сделать, где что находится">Сообщество</a></li>
+			<li id="n-currentevents"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%92%D0%B8%D0%BA%D0%B8%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Список текущих событий">Текущие события</a></li>
+			<li id="n-recentchanges"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:RecentChanges" title="Список последних изменений [alt-r]" accesskey="r">Свежие правки</a></li>
+			<li id="n-randompage"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Random" title="Посмотреть случайную страницу [alt-x]" accesskey="x">Случайная статья</a></li>
+			<li id="n-help"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5" title="Справочник по проекту «Викиконспекты»">Справка</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Инструменты</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:WhatLinksHere/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5" title="Список всех страниц, которые ссылаются на эту страницу [alt-j]" accesskey="j">Ссылки сюда</a></li>
+			<li id="t-recentchangeslinked"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:RecentChangesLinked/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5" title="Последние изменения в страницах, на которые ссылается эта страница [alt-k]" accesskey="k">Связанные правки</a></li>
+			<li id="t-specialpages"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:SpecialPages" title="Список служебных страниц [alt-q]" accesskey="q">Спецстраницы</a></li>
+			<li><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&printable=yes" rel="alternate">Версия для печати</a></li>
+			<li id="t-permalink"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%80%D1%8E%D0%BA%D0%B7%D0%B0%D0%BA%D0%B5&oldid=33903" title="Постоянная ссылка на эту версию страницы">Постоянная ссылка</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Последнее изменение этой страницы: 16:23, 4 декабря 2013.</li>
+											<li id="footer-info-viewcount">К этой странице обращались 13&nbsp;179 раз.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%92%D0%B8%D0%BA%D0%B8%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B:%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Викиконспекты:Политика конфиденциальности">Политика конфиденциальности</a></li>
+											<li id="footer-places-about"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%92%D0%B8%D0%BA%D0%B8%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="Викиконспекты:Описание">Описание Викиконспекты</a></li>
+											<li id="footer-places-disclaimer"><a href="http://neerc.ifmo.ru/wiki/index.php?title=%D0%92%D0%B8%D0%BA%D0%B8%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Викиконспекты:Отказ от ответственности">Отказ от ответственности</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./Задача о рюкзаке — Викиконспекты_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="./Задача о рюкзаке — Викиконспекты_files/load(3).php"></script>
+<script>if(window.mw){
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+}
+</script><script type="text/javascript" src="./Задача о рюкзаке — Викиконспекты_files/load(4).php"></script>
+<script>if(window.mw){
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"ru","language":"ru","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: wikidb:resourceloader:filter:minify-js:4:aaf8401d513bbad8a78707aa1d2bbff3 */
+}
+</script><!-- Served in 0.151 secs. -->
+	
+
+</body></html>
